@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <title>Документ з розділами та абзацами</title>
+    <style>
+        body {
+            font-family: 'Times New Roman', serif;
+            line-height: 1.6;
+            margin: 40px;
+            background-color: #f9f9f9;
+        }
+        
+        .special-paragraph {
+            font-family: Arial, sans-serif;
+            font-size: 16px;
+            color: #2c3e50;
+            font-weight: bold;
+            text-align: justify;
+            background-color: #e8f4f8;
+            padding: 15px;
+            border-left: 4px solid #3498db;
+            margin: 10px 0;
+        }
+        
+        .content-section {
+            background-color: white;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 10px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        
+        .highlight {
+            color: #e74c3c;
+            font-weight: bold;
+            font-style: italic;
+        }
+    </style>
+</head>
+<body>
+    <div class="content-section">
+        <h1>Основні розділи документа</h1>
+        
+        <p class="special-paragraph">
+            Це перший абзац у першому розділі. Він має спеціальне форматування, 
+            що застосоване через CSS-клас. Текст вирівняний по ширині, 
+            має блакитний фон та синю смужку зліва.
+        </p>
+        
+        <p>Це звичайний абзац у тому ж розділі. Він успадковує базові 
+           стилі документа, але не має додаткового форматування.</p>
+    </div>
+
+    <div class="content-section">
+        <h2>Другий розділ</h2>
+        
+        <p class="special-paragraph">
+            У цьому розділі також використано абзац зі спеціальним стилем. 
+            Зверніть увагу, що <span class="highlight">окремі слова</span> 
+            можуть мати додаткове форматування через інші CSS-класи.
+        </p>
+        
+        <p>Ще один звичайний абзац для демонстрації єдності стилів 
+           між різними розділами документа.</p>
+    </div>
+
+    <div class="content-section">
+        <h2>Третій розділ</h2>
+        
+        <p class="special-paragraph">
+            Останній розділ також підпорядковується загальним стилям 
+            документа. Усі розділи мають однакове оформлення: білий фон, 
+            закруглені кути та тінь, що забезпечує візуальну єдність.
+        </p>
+    </div>
+</body>
+</html>
